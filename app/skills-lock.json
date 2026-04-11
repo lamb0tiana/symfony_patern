@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "symfony:quality-checks": {
+      "source": "makfly/superpowers-symfony",
+      "sourceType": "github",
+      "computedHash": "81712bad7ff1c449691e29e34a24773f9a9023c648f3328c785d271650e8bb7b"
+    }
+  }
+}
