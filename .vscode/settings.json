@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.twig": "html"
+    },
+    "emmet.includeLanguages": {
+        "twig": "html"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "html.format.enable": true
+}

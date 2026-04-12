@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  php:
+    build:
+      context: ./docker/php
+    container_name: symfony_php
+    working_dir: /var/www/symfony
+    volumes:
+      - ./app:/var/www/symfony
+      - ./docker/php/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+    environment:
+      - XDEBUG_MODE=debug
+      - XDEBUG_CLIENT_HOST=host.docker.internal
+      - XDEBUG_CLIENT_PORT=9003
+    depends_on:
+      - mongodb
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  nginx:
+    image: nginx:alpine
+    container_name: symfony_nginx
+    ports:
+      - "8088:80"
+    volumes:
+      - ./app:/var/www/symfony
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+
+  mongodb:
+    image: mongo:latest
+    container_name: symfony_mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
