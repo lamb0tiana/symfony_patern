@@ -1,7 +1,15 @@
-{% extends "base.html.twig" %}
+{% extends 'base.html.twig' %}
 
-{% block body%}
-<h1>hello</h1>
-<twig:LiveDemo />
-{{component('LiveDemo', {number:6})}}
-{% endblock%}
+{% block body %}
+    <h1>hello</h1>
+    <twig:LiveDemo number="78" />
+
+    {{
+        component(
+            'LiveDemo',
+            {
+                number: 6
+            }
+        )
+    }}
+{% endblock %}

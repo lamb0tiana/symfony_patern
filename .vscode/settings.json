@@ -1,11 +1,19 @@
 {
-    "files.associations": {
-        "*.twig": "html"
-    },
-    "emmet.includeLanguages": {
-        "twig": "html"
-    },
-    "emmet.triggerExpansionOnTab": true,
-    "emmet.showSuggestionsAsSnippets": true,
-    "html.format.enable": true
+  "files.associations": {
+    "*.twig": "html"
+  },
+  "emmet.includeLanguages": {
+    "twig": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.formatOnSave": true,
+  "[twig]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.requireConfig": false,
+  "prettier.enableLanguages": ["twig", "html"]
 }

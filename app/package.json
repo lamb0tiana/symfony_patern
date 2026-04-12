@@ -1,0 +1,18 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write 'templates/**/*.twig'",
+    "format:check": "prettier --check 'templates/**/*.twig'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.25.0",
+    "@zackad/prettier-plugin-twig": "^0.17.0",
+    "prettier": "^3.8.2"
+  }
+}
