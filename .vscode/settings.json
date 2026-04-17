@@ -15,5 +15,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "prettier.requireConfig": false,
-  "prettier.enableLanguages": ["twig", "html"]
+  "prettier.enableLanguages": ["twig", "html"],
+  "prettier.displayInfo": false,
+  "prettier.enableDebugLogs": false,
+  "prettier.trace": "off",
+  "prettier.logging": "warn"
 }
