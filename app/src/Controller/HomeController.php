@@ -13,4 +13,10 @@ final class HomeController extends AbstractController
 
         return $this->render('index.html.twig');
     }
+    #[Route('/chart', name: 'app_chart')]
+    public function chart(): Response
+    {
+
+        return $this->render('chart.html.twig');
+    }
 }

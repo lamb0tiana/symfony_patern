@@ -1,0 +1,18 @@
+<div {{ attributes }}>
+    <div class="flex justify-center mb-4">
+        <select
+            data-model="currentPeriod"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-48 p-2.5"
+        >
+            <option value="1">
+                Cette semaine
+            </option>
+            <option value="-1">
+                La semaine dernière
+            </option>
+        </select>
+    </div>
+    <div data-loading="addClass(opacity-50)" class="w-1/2 flex justify-center items-center">
+        {{ render_chart(this.chart) }}
+    </div>
+</div>

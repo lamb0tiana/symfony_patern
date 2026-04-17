@@ -25,4 +25,14 @@ return [
     '@hotwired/stimulus' => [
         'version' => '3.2.2',
     ],
+    'chart.js' => [
+        'version' => '3.9.1',
+    ],
+    'tailwindcss' => [
+        'version' => '4.2.2',
+    ],
+    'tailwindcss/index.min.css' => [
+        'version' => '4.2.2',
+        'type' => 'css',
+    ],
 ];
